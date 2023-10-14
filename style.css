@@ -77,10 +77,82 @@ a:link, a:visited{
 }
 
 
-
-
 .rand{
     width: 100%;
     background-color: red;
 }
 
+
+#Calculator{
+    text-align: justify;
+    margin: 50px auto 50px auto;
+    width: fit-content;
+    position: relative;
+    border: 10px solid black;
+    padding: 25px 50px 25px 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.Calculator-Display {
+    border: 10px solid black;
+    padding: 5%;
+    font-size: 30px;
+}
+
+.Calculator-Buttons{
+    display: flex;
+    margin: 10px;
+
+}
+
+.Calculator-Numbers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Calculator-Numbers button {
+    font-size: inherit;
+    height: 75px;
+    width: 30%;
+    margin: 1%;
+}
+
+.Calculator-Operators{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    align-items: center;
+}
+
+.Calculator-Operators button,
+.Calculator-Operators div{
+    font-size: inherit;
+    width: 100%;
+}
+
+.Calculator-Operators-Directions,
+.Calculator-Operators-Brackets{
+    display: flex;
+}
+
+.Calculator-Operators-Directions button,
+.Calculator-Operators-Brackets button{
+    width: 50%;
+}
+
+button{
+    cursor: pointer;
+}
+/* 
+button:active {
+    background: red;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+} */
