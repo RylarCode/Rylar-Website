@@ -137,7 +137,8 @@ a:link, a:visited{
 }
 
 .Calculator-Operators-Directions,
-.Calculator-Operators-Brackets{
+.Calculator-Operators-Brackets,
+.Calculator-Operators-Delete{
     display: flex;
 }
 
