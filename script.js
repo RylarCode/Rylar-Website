@@ -59,7 +59,7 @@ function buttonClicked(button){
 
 
 let buttons = document.getElementsByTagName("button")
-let screenDisplay = document.querySelector('.Calculator-Display')
+let screenDisplay = document.querySelector('.Calculator-Display-Main')
 
 for (let i=0; i<buttons.length; i++){
     //Just writing the function calls it, but doesnt return it, in this case, you will have to define the function in the addeventlistener function

@@ -86,7 +86,7 @@ a:link, a:visited{
 #Calculator{
     text-align: justify;
     margin: 50px auto 50px auto;
-    width: fit-content;
+    width: 420px;
     position: relative;
     border: 10px solid black;
     padding: 25px 50px 25px 50px;
@@ -101,12 +101,22 @@ a:link, a:visited{
     border: 10px solid black;
     padding: 5%;
     font-size: 30px;
+
+}
+
+.Calculator-Display-Main,
+.Calculator-Display-Line {
+    overflow-wrap: break-word;
+}
+
+.Calculator-Display-Line {
+    margin-top: -35px;
+    margin-left: 14.5px;
 }
 
 .Calculator-Buttons{
     display: flex;
     margin: 10px;
-
 }
 
 .Calculator-Numbers{
