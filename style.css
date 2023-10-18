@@ -95,13 +95,14 @@ a:link, a:visited{
     display: flex;
     flex-direction: column;
     font-size: 30px;
+    font-family: monospace;
 }
 
 .Calculator-Display {
     border: 10px solid black;
     padding: 5%;
     font-size: 30px;
-
+    font-family: monospace
 }
 
 .Calculator-Display-Main,
@@ -111,7 +112,7 @@ a:link, a:visited{
 
 .Calculator-Display-Line {
     margin-top: -35px;
-    margin-left: 14.5px;
+    margin-left: -8px;
 }
 
 .Calculator-Buttons{
@@ -130,6 +131,7 @@ a:link, a:visited{
     height: 75px;
     width: 30%;
     margin: 1%;
+    font-family: inherit;
 }
 
 .Calculator-Operators{
