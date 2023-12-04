@@ -132,6 +132,7 @@ a:link, a:visited{
     width: 30%;
     margin: 1%;
     font-family: inherit;
+    border-radius: 10px;
 }
 
 .Calculator-Operators{
@@ -146,6 +147,7 @@ a:link, a:visited{
 .Calculator-Operators div{
     font-size: inherit;
     width: 100%;
+    border-radius: 25px;
 }
 
 .Calculator-Operators-Directions,
@@ -162,10 +164,31 @@ a:link, a:visited{
 button{
     cursor: pointer;
 }
-/* 
+
+
+.Calculator-History>table {
+    border-collapse: seperate;
+    border-spacing: 5px;
+    width: 75%;
+    border: 1px solid #ddd;
+}
+
+.Calculator-Container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
 button:active {
-    background: red;
-    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-    box-shadow: inset 0px 0px 5px #c1c1c1;
-} */
+    background: grey;
+    box-shadow: inset 0px 0px 25px black;
+    font-size: 25px;
+}

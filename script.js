@@ -106,3 +106,20 @@ for (let i=0; i<buttons.length; i++){
         buttonClicked(buttons[i]);
     })
 }
+
+
+
+
+
+//Only works in Node.js
+
+// const sqlite3 = require('sqlite3');
+
+// const db = new sqlite3.Database('./db.sqlite');
+
+
+
+
+
+
+

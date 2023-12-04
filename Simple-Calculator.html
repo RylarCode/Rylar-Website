@@ -15,47 +15,79 @@
         <h2>About this Page:</h2>
         <h4>Here, I try to make a crude calculator, nothing too special, just a small project to get familiar with Javascript and CSS</h4>
     </div>
-    
-    <div id="Calculator">
-        <div class="Calculator-Display">
-            <div class="Calculator-Display-Main">0</div>
-            <div class="Calculator-Display-Line">|</div>
+    <div class="Calculator-Container">
+        <div id="Calculator">
+            <div class="Calculator-Display">
+                <div class="Calculator-Display-Main">0</div>
+                <div class="Calculator-Display-Line">|</div>
+            </div>
+            <div class="Calculator-Buttons">
+                <div class="Calculator-Numbers">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>.</button>
+                    <button>0</button>
+                </div>
+                <div class="Calculator-Operators">
+                    <div class="Calculator-Operators-Delete">
+                        <button>C</button>
+                        <button>Bs</button>
+                    </div>
+                    <div class="Calculator-Operators-Directions">
+                        <button>&lt-</button>
+                        <button>-&gt</button>
+                    </div>
+                    <div class="Calculator-Operators-Brackets">
+                        <button>(</button>
+                        <button>)</button>
+                    </div>
+                    <button>+</button>
+                    <button>-</button>
+                    <button>*</button>
+                    <button>/</button>
+                    <button>=</button>
+                </div>
+            </div>
         </div>
-        <div class="Calculator-Buttons">
-            <div class="Calculator-Numbers">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>0</button>
-            </div>
-            <div class="Calculator-Operators">
-                <div class="Calculator-Operators-Delete">
-                    <button>C</button>
-                    <button>Bs</button>
-                </div>
-                <div class="Calculator-Operators-Directions">
-                    <button>&lt-</button>
-                    <button>-&gt</button>
-                </div>
-                <div class="Calculator-Operators-Brackets">
-                    <button>(</button>
-                    <button>)</button>
-                </div>
-                <button>+</button>
-                <button>-</button>
-                <button>*</button>
-                <button>/</button>
-                <button>=</button>
-            </div>
+    
+        <div class="Calculator-History">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Calculation</th>
+                        <th>Results</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Random 1</td>
+                        <td>Random 2</td>
+                        <td>Random 3</td>
+                    </tr>
+                    <tr>
+                        <td>Random 4</td>
+                        <td>Random 5</td>
+                        <td>Random 6</td>
+                    </tr>
+                    <tr>
+                        <td>Random 7</td>
+                        <td>Random 8</td>
+                        <td>Random 9</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-
+    
+    
     <script src="script.js"></script>
 </body>
 </html>
