@@ -22,7 +22,17 @@ function displayCurrentOperations(calculatorDisplay){
 
 function calculateCurrentOperations(){
     try{
-        screenDisplay.textContent = calculatorDisplay + " = " + eval(calculatorDisplay)
+
+        if (eval(calculatorDisplay) == 80085){
+            screenDisplay.textContent = "80085 = Nice"
+            const layeredBoom = new Audio('./Audio/Vine-Boom.mp3')
+            layeredBoom.play()
+        } else {
+            screenDisplay.textContent = calculatorDisplay + " = " + eval(calculatorDisplay)
+        }
+        
+
+
     }
     catch{
         screenDisplay.textContent = "There was an error"
