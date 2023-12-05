@@ -27,6 +27,7 @@ function calculateCurrentOperations(){
             screenDisplay.textContent = "80085 = Nice"
             const layeredBoom = new Audio('./Audio/Vine-Boom.mp3')
             layeredBoom.play()
+            showImageRandomLocation()
         } else {
             screenDisplay.textContent = calculatorDisplay + " = " + eval(calculatorDisplay)
         }
@@ -44,6 +45,10 @@ function clearCurrentOperations(){
     calculatorDisplay = ""
     displayCurrentOperations(calculatorDisplay)
     moveCurrentLocation('reset')
+
+    while (bgImageContainer.hasChildNodes()){
+        bgImageContainer.removeChild(bgImageContainer.firstChild)
+    }
 }
 
 function deleteCurrentLocation(){
@@ -103,12 +108,45 @@ function buttonClicked(button){
     }
 }
 
+function showImageRandomLocation() {
+    let img = document.createElement("img");
+
+    let randNum = Math.random()
+
+    if (randNum < 0.9){
+        img.src = './Images/rock-eyebrow.jpg';
+    } else {
+        img.src = './Images/lucky-image.jpg';
+    }
+    
+
+    // Set a random position within the viewport
+    img.style.position = 'fixed'
+    img.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+    img.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
+
+    // Set a random size with a limit
+    var randomSize = Math.floor(Math.random() * 200) + 50; // Adjust the limits as needed
+    img.style.width = randomSize + "px";
+    img.style.height = randomSize + "px";
+
+    // Append the image to the container
+    bgImageContainer.appendChild(img);
+}
+
+
+
+
+
+
+
 
 
 
 let buttons = document.getElementsByTagName("button")
 let screenDisplay = document.querySelector('.Calculator-Display-Main')
 let inputLine = document.querySelector('.Calculator-Display-Line')
+let bgImageContainer = document.getElementById("image-container")
 
 for (let i=0; i<buttons.length; i++){
     //Just writing the function calls it, but doesnt return it, in this case, you will have to define the function in the addeventlistener function
